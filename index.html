@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoリスト作成</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <h1>Todoリスト</h1>
+
+    <!--form内に入力欄とボタンを設置するコードをひとまとめにする-->
+    <form>
+        <input class="task_value" type="text"/>
+        <button class="task_submit" type="button">Add Task</button>
+    </form>
+
+    <!--divタグ自体は意味を持たない-->
+    <div id="table">
+        <h2>現在のタスク</h2>
+        <ul class="task_list"></ul>
+    </div>
+
+    <!--jsファイルの読み込み-->
+    <script src="todo.js"></script>
+    
+</body>
+</html>
